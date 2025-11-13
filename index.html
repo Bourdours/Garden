@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Garden</title>
 </head>
@@ -12,7 +13,7 @@
             <a  href="i" alt="Logo">G</a>
         </div>
         <nav id="menuprincipal">
-            <ul class="choix">
+            <ul>
                 <li><a href="index.html" class="on">Accueil</a></li>
                 <li><a href="#">A&nbsp;propos</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
@@ -25,29 +26,83 @@
     <main id="contenu" class="container fondInter">
         <section id="enAvant">
             <article class="categorie">
-                <img src="images-garden/ampoule.PNG" alt="ampoule">
-                <h2>Idées de paysages</h2>
+                <a href="#">
+                    <img src="images-garden/ampoule.PNG" alt="ampoule">
+                    <h2>Idées de paysages</h2>
+                </a>
+                    <hr size="5" noshade>
+                
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ab repellendus iure ex numquam voluptatibus possimus.
                 </p>
             </article>
             <article class="categorie">
-                <img src="images-garden/goutte.PNG" alt="Goutte">
-                <h2>Irrigation</h2>
+                <a href="#">
+                    <img src="images-garden/goutte.PNG" alt="Goutte">
+                    <h2>Irrigation</h2>
+                </a>
+                    <hr size="5" noshade>
+                </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam cupiditate corporis id nam magnam expedita modi?
                 </p>
             </article>
             <article class="categorie">
-                <img src="images-garden/photos.PNG" alt="Photo">
-                <h2>Galerie photo</h2>
+                <a href="#">
+                    <img src="images-garden/photos.PNG" alt="Photo">
+                    <h2>Galerie photo</h2>
+                </a>
+                    <hr size="5" noshade>
+                
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem laborum repellendus sunt, corrupti vitae illum velit?
                 </p>
-
             </article>
         </section>
+
+        <div id="bienvenu">
+            <div id="titrevisuel">
+                <h1>Le design <br> de paysage</h1>
+                <img src="images-garden/home-02.jpg" alt="Arbre coeur">
+            </div>
+            
+            <div id="texteliste">
+                <hr size="5" noshade>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt rerum laborum excepturi sed est modi non incidunt quam quaerat voluptatem, similique possimus voluptatum iste perspiciatis, officiis debitis sapiente, aliquam eos odio facere perferendis deleniti quo alias! Totam nulla laudantium optio? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus facilis quisquam nam, deserunt est minus earum neque nulla dolor ut nemo mollitia, illo quidem adipisci!
+                </p>
+                <ul class="choix">
+                    <li><a href="#">Balance</a></li>
+                    <li><a href="#">Simplicité</a></li>
+                    <li><a href="#">Proportions</a></li>
+                    <li><a href="#">Unité</a></li>
+                    <li><a href="#">Ligne&nbsp;et&nbsp;Rythme</a></li>
+                    <li><a href="#">Harmonie</a></li>
+                </ul>
+                <button id="button">Plus d'infos</button>
+            </div>
+        </div>
+
+        <div id="pub">
+<!-- Zone pub -->
+        </div>
     </main>
 
-    <footer>
-
+    <footer id="pied" class="container">
+        <div class="colonne">
+            <address>
+                <span class="majuscule">Garden</span> <br>
+                Za des petits Bois, 56000 Vannes cedex 7 
+            </address>
+            <div class="icone">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+        </div>
+        <div class="colonne">
+            <a href="#tete"><img src="images-garden/flechehaut.png" alt="Fleche pour remonter la page"></a>
+            <p class="copyright">
+                Copyright Greta 2025 &copy;<a href="#"> Mentions légales</a>
+            </p>
+        </div>
     </footer>
 </body>
 </html>
