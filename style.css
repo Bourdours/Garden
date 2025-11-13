@@ -1,0 +1,107 @@
+
+:root {
+    --couleur1: #966978 ;
+    --couleur2: #17cd28 ;
+    --fontTitreMenu : "megan_juneregular";
+    --textFondDark : #fff ;
+    --couleurFondDark : #000 ;
+    --couleurFondInter: #dddcdc ;
+    --couleurFondLight : #fff ;
+    --fontArticle : "cabinregular" ;
+}
+/*  =========== Fonts =================== */
+@font-face {
+    font-family: 'megan_juneregular';
+    src: url('fonts/megan_june-webfont.woff2') format('woff2'),
+         url('fonts/megan_june-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'cabinregular';
+    src: url('fonts/cabin-regular-webfont.woff2') format('woff2'),
+         url('fonts/cabin-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ============ Général ================= */
+*{
+    margin: 0; /* overright css html */
+    padding: 0;
+}
+
+a{
+    text-decoration: none; /* pas de liens soulignés */
+}
+
+ul{
+    list-style-type: none; /*  pas de puces */
+}
+
+.container{
+    max-width: 1280px; /*  largeur max de bloc si taille au dessus de 1280px */
+    width: 100%; /* si taille en dessous de 1280px */
+    margin: 0 auto; /* 0 pour haut/bas auto pour droite/gauche */
+}
+
+.fondInter{
+    background-color: var(--couleurFondInter);
+}
+/* ============== Tete ================ */
+#tete{
+    font-family: var(--fontTitreMenu);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#tete #logo a{
+    font-size: 3.5rem ;
+    color: black;
+    width: 20%;
+    border-bottom: 14px solid var(--couleur1); /* pour le petit bout sous la lettre */
+}
+
+#tete #menuprincipal{
+    width: 60%;
+}
+
+#tete #menuprincipal ul{
+    display: flex;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    justify-content: flex-end ;
+}
+
+#tete #menuprincipal ul li {
+    margin-left: 5%;
+}
+
+#tete #menuprincipal ul li a {
+    color: black;
+    padding-bottom: 12px;
+}
+
+#tete #menuprincipal ul li a:hover, #tete #menuprincipal ul li a.on{
+    border-bottom: 14px solid var(--couleur2);
+}
+
+/* ============== Main ================ */
+
+#contenu {
+    margin-top: 24px;
+    font-family: var(--fontArticle);
+}
+
+#contenu #enAvant {
+
+}
+
+#contenu #enAvant.categorie{
+
+}
+/* ============== Pied ================ */
