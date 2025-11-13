@@ -105,6 +105,10 @@ body h1,h2,h3,h4,h5{
 }
 
 /* ============== Main ================ */
+#slider{
+    margin-top: -10px;
+}
+
 
 #contenu {
     margin-top: 24px;
@@ -291,4 +295,38 @@ body h1,h2,h3,h4,h5{
 
 #pied .colonne:last-child a:hover{
     text-decoration: underline;
+}
+
+
+
+/* ============= Extra (slider) =========== */
+
+.nivo-caption{
+    background-color: transparent;
+    left: 30%;
+    top: 40%;
+}
+
+.nivo-caption h4, .nivo-caption h5{
+    font-family: var(--fontTitreMenu);
+    font-size: 2.7rem;
+    font-weight: lighter;
+}
+
+.nivo-caption h4{
+    font-size: 10rem;
+    letter-spacing: 25px;
+    
+}
+
+.vert{
+    color: var(--couleur2);
+    border-bottom: 15px solid #fff;
+    padding-bottom: 15px;
+}
+
+.bordeaux{
+    color: var(--couleur1);
+    border-bottom: 15px solid #fff;
+    padding-bottom: 15px;
 }

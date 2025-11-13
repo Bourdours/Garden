@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font pour icone -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fin icone -->
+    <!-- début ref pour le slider -->
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+    <!-- fin ref slider -->
     <link rel="stylesheet" href="style.css">
     <title>Garden</title>
+
+
+
 </head>
 <body>
     <header id="tete" class="container">
@@ -23,7 +32,29 @@
         </nav>
     </header>
 
+    <!-- Début slider -->
     <main id="contenu" class="container fondInter">
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images-garden/swiper-1.jpg" alt="Photo de forêt" title="#htmlcaption1" />
+                <img src="images-garden/swiper-2.jpg" alt="Photo de Jardin" title="#htmlcaption2" data-transition="slideInLeft" />
+                <img src="images-garden/swiper-3.jpg" alt="Photo d'hippocampe" title="#htmlcaption3" />
+            </div>
+            <div id="htmlcaption1" class="nivo-html-caption">
+                <h4>Garden</h4>
+                <h5><span class="vert">pro</span> design d'exterieur</h5>
+            </div>
+            <div id="htmlcaption2" class="nivo-html-caption">
+               <h4>Jardin</h4>
+               <h5>Votre <span class="bordeaux">professionnel</span> de prestige</h5>
+            </div>
+            <div id="htmlcaption3" class="nivo-html-caption">
+                <h4>Gardin</h4>
+                <h5>Pour vos <span class="vert">étangs</span> aussi</h5>
+            </div>
+        </div>
+<!-- fin slider -->
+        
         <section id="enAvant">
             <article class="categorie">
                 <a href="#">
@@ -104,5 +135,16 @@
             </p>
         </div>
     </footer>
+
+
+    <!-- Script sur body après footer, pour le slider -->
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+    <!-- fin script slider -->
 </body>
 </html>
