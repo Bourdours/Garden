@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,9 +19,10 @@
 <body>
     <header id="tete" class="container">
         <div id="logo">
-            <a  href="i" alt="Logo">G</a>
+            <a  href="#">G</a>
         </div>
         <nav id="menuprincipal">
+            <div id="burger"><i class="fa-solid fa-bars"></i></div>
             <ul>
                 <li><a href="index.html" class="on">Accueil</a></li>
                 <li><a href="#">A&nbsp;propos</a></li>
@@ -72,7 +73,6 @@
                     <h2>Irrigation</h2>
                 </a>
                     <hr size="5" noshade>
-                </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam cupiditate corporis id nam magnam expedita modi?
                 </p>
             </article>
@@ -143,6 +143,9 @@
     <script type="text/javascript">
     $(window).load(function() {
         $('#slider').nivoSlider();
+    });
+    $("#tete #menuprincipal #burger i").click(function(){
+        $("#tete #menuprincipal ul").slideToggle(500);
     });
     </script>
     <!-- fin script slider -->

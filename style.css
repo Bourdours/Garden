@@ -29,8 +29,8 @@
 
 /* ============ Général ================= */
 *{
-    margin: 0; /* overright css html */
-    padding: 0;
+margin: 0; /* overright css html */
+padding: 0;
 }
 
 a{
@@ -82,6 +82,12 @@ body h1,h2,h3,h4,h5{
 
 #tete #menuprincipal{
     width: 60%;
+}
+
+#tete #menuprincipal #burger{
+    font-size: 3rem;
+    text-align: right;
+    display: none;
 }
 
 #tete #menuprincipal ul{
@@ -137,7 +143,12 @@ body h1,h2,h3,h4,h5{
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
 }
-
+ 
+/*
+#contenu #enAvant .categorie{
+    width: 48%;
+}
+*/
 #contenu #enAvant .categorie:hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
@@ -329,4 +340,283 @@ body h1,h2,h3,h4,h5{
     color: var(--couleur1);
     border-bottom: 15px solid #fff;
     padding-bottom: 15px;
+}
+
+.theme-default .nivo-controlNav  a{
+    background: url(images-garden/blanc.jpg) no-repeat ;
+}
+
+.theme-default .nivo-controlNav a.active {
+    background: url(images-garden/rouge.jpg) no-repeat;
+}
+
+/* ============ Page : Galerie =============== */
+
+/* ==== Flexbox ==== */
+
+#contenu .titrePage{
+    text-transform: none;
+    padding-left: 2%;
+    padding-bottom: 30px;
+    font-family: var(--fontTitreMenu);
+    background-color: #fff;
+    font-size: 3rem;
+}
+
+#contenu hr{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+#contenu #paysages {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+#contenu #paysages .categoriePaysage{
+    width: 100%;
+}
+#contenu #paysages .categoriePaysage ul {
+    padding: 48px 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+#contenu #paysages .categoriePaysage ul li a {
+    background-color: var(--couleur2);
+    color: #fff;
+    padding: 8px 16px;
+    margin: 0 24px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#contenu #paysages .categoriePaysage ul li a:hover,
+#contenu #paysages .categoriePaysage ul li a.choix {
+    color: #17cd28;
+    background-color: var(--couleur1);
+}
+/*
+.choix {
+    background-color: #966978;
+    color: #17cd28;
+} */
+
+#contenu #paysages .paysage {
+    width: 23%;
+    box-sizing: border-box;
+    display: block ;
+    flex-direction: row ;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 1%;
+    border: solid 1px #999898;
+    background-color: #fff;
+    border-radius:0 0 10px 10px;
+    -webkit-border-radius:0 0 10px 10px;
+    -moz-border-radius:0 0 10px 10px;
+    -ms-border-radius:0 0 10px 10px;
+    -o-border-radius:0 0 10px 10px;
+    line-height: 1rem;
+    font-family: var(--fontTitreMenu);
+    box-shadow: 2px 2px #00000060;
+}
+
+#contenu #paysages .paysage a, 
+#contenu #paysages .paysage h2{
+    text-decoration: none;
+    color: #000;
+    text-transform: none;
+    margin-top: -10px;
+    padding-left: 3%;
+}
+
+#contenu #paysages .paysage p {
+    margin: 16px 0 16px 0;
+    font-size: 1rem;
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+#contenu #paysages .paysage img {
+    width: 100%;
+    display: block;
+    border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+}
+
+/* ==== Grid ===== */
+
+#contenu2 .titrePage{
+    text-transform: none;
+    padding-left: 2%;
+    padding-bottom: 30px;
+    font-family: var(--fontTitreMenu);
+    background-color: #fff;
+    font-size: 3rem;
+}
+
+#contenu2 #paysages {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px);
+    grid-gap: 16px;
+    justify-content: center;
+    background-color: #fff;
+}
+
+#contenu2 .paysage {
+    padding: 1% 0 0;
+    border: 1px solid #999898;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 12px 0 0;
+}
+#contenu2 .paysage h2,
+#contenu2 .paysage a{
+    color: #000;
+    margin-bottom: 8px;
+    padding: 8px;    
+}
+#contenu2 .paysage p{
+    padding: 8px;    
+}
+#contenu2 .paysage img {
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========== Responsive ================= */
+
+@media screen and (max-width: 800px) {
+    body{
+        background-color: pink;
+    }
+    
+    #tete{
+        align-items: flex-start;
+        padding-top: 24px;
+        padding-left: 3%;
+        box-sizing: border-box;
+    }
+    
+    #tete #menuprincipal #burger{
+        display: block;
+        padding-right: 3%;
+    }
+    
+    #tete #menuprincipal ul {
+        flex-direction: column;
+        text-align: right;
+        padding-right: 3%;
+        display: none;
+    }
+    #tete #menuprincipal ul li {
+        line-height: 3.2rem;
+    }
+    #tete #menuprincipal ul li a{
+        padding-bottom: 0px;        
+    }
+    
+    #tete #menuprincipal ul li a:hover,
+    #tete #menuprincipal ul li a.on{
+        border-bottom:  10px solid var(--couleur2);
+    }
+    
+    #enAvant .categorie:last-child{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    body{
+        background-color: yellow;
+    }
+    .slider-wrapper{
+        display: none ;
+    }
+    #enAvant{
+        flex-direction: column;
+        align-items: center;
+    }
+    #enAvant  .categorie{
+        width: 95%;
+        margin-bottom: 16px;
+    }
+    #enAvant .categorie:last-child{
+        display: flex;
+    }
+    
+    #bienvenu {
+        flex-direction: column;
+        width: 98%;
+        padding: 40px;
+    }
+    #bienvenu #texteliste{
+        width: 95%;
+    }
+
+    #bienvenu #texteliste p {
+        line-height: 32px;
+        width: 100%;
+        font-size: 1.4rem;
+    }
+    #bienvenu #texteliste ul{
+        width: 100%;
+    }
+    #bienvenu img {
+        display: none;
+    }
+
+    #pied {
+        flex-direction: column;
+
+    }
+
+    #pied .colonne {
+        width: 95%;
+        text-align: center;
+    }
+
+
+
+/* ======== Page : Galerie ============ */
+
+    #contenu #paysages .paysage {
+        width: 40%;
+    }
+
 }

@@ -1,11 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- font pour icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fin icone -->
+    <!-- début ref pour le slider -->
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+    <!-- fin ref slider -->
+    <link rel="stylesheet" href="style.css">
+    <title>Gallerie Garden</title>
+
 </head>
 <body>
-    
+     <header id="tete" class="container">
+        <div id="logo">
+            <a  href="#">G</a>
+        </div>
+        <nav id="menuprincipal">
+            <div id="burger"><i class="fa-solid fa-bars"></i></div>
+            <ul>
+                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="#">A&nbsp;propos</a></li>
+                <li><a href="galerie.html" class="on">Galerie</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--  === flexbox === -->
+    <main id="contenu" class="container fondInter">
+        <h1 class="titrePage">Idées de Paysage</h1>
+        <hr size="1" noshade>
+        <section id="paysages">
+            <header class="categoriePaysage">
+                <nav id="menuPaysage">
+                    <ul>
+                        <li><a href="#" id="tout" >Tout</a></li>
+                        <li><a href="#" id="jardins" >Jardins</a></li>
+                        <li><a href="#" id="forets" >Forêts</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <article class="paysage tout jardins ">
+                <a href="#"><h2>Cabane</h2></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ea.</p>
+                <img src="galerie/anis-azhar.jpg" alt="Anis Azhar">
+            </article>
+            <article class="paysage tout forets">
+                <a href="#"><h2>Claustra</h2></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, corporis!</p>
+                <img src="galerie/annie-spratt.jpg" alt="Annie Spratt">
+            </article>
+            <article class="paysage tout jardins">
+                <a href="#"><h2>Givre</h2></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, corporis!</p>
+                <img src="galerie/annie-spratt2.jpg" alt="Annie Spratt 2">
+            </article>
+            <article class="paysage tout jardins">
+                <a href="#"><h2>Brume</h2></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, corporis!</p>
+                <img src="galerie/daniel-oberg.jpg" alt="Daniel Oberg">
+            </article>
+            <article class="paysage tout forets">
+                <a href="#"><h2>Plants</h2></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, corporis!</p>
+                <img src="galerie/kailash-sankar.jpg" alt="Kailash Sanker">
+            </article>
+            <article class="paysage tout jardins">
+                <a href="#"><h2>Arche</h2></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, corporis!</p>
+                <img src="galerie/maria-hada.jpg" alt="Maria hada">
+            </article>
+            <article class="paysage tout forets">
+                <a href="#"><h2>Sous-Bois</h2></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, corporis!</p>
+                <img src="galerie/peter-li.jpg" alt="Peter Li">
+            </article>
+            <article class="paysage tout jardins">
+                <a href="#"><h2>Portail</h2></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, corporis!</p>
+                <img src="galerie/xypher-zhyan.jpg" alt="Xypher Zhyan">
+            </article>
+        </section>
+    </main>
+
+<!-- === Grid ===  -->
+    <main id="contenu2" class="container fondInter">
+        <h1 class="titrePage">Idées de Paysage</h1>
+        <hr size="1" noshade>
+        <section id="paysages">
+            <article class="paysage">
+                <a href="#"><h2>Cabane</h2></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ea.</p>
+                <img src="galerie/anis-azhar.jpg" alt="Anis Azhar">
+            </article>
+            <article class="paysage">
+                <a href="#"><h2>Claustra</h2></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, corporis!</p>
+                <img src="galerie/annie-spratt.jpg" alt="Annie Spratt">
+            </article>
+            <article class="paysage">
+                <a href="#"><h2>Givre</h2></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, corporis!</p>
+                <img src="galerie/annie-spratt2.jpg" alt="Annie Spratt 2">
+            </article>
+            <article class="paysage">
+                <a href="#"><h2>Brume</h2></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, corporis!</p>
+                <img src="galerie/daniel-oberg.jpg" alt="Daniel Oberg">
+            </article>
+            <article class="paysage">
+                <a href="#"><h2>Plants</h2></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, corporis!</p>
+                <img src="galerie/kailash-sankar.jpg" alt="Kailash Sanker">
+            </article>
+            <article class="paysage">
+                <a href="#"><h2>Arche</h2></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, corporis!</p>
+                <img src="galerie/maria-hada.jpg" alt="Maria hada">
+            </article>
+            <article class="paysage">
+                <a href="#"><h2>Sous-Bois</h2></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, corporis!</p>
+                <img src="galerie/peter-li.jpg" alt="Peter Li">
+            </article>
+            <article class="paysage">
+                <a href="#"><h2>Portail</h2></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, corporis!</p>
+                <img src="galerie/xypher-zhyan.jpg" alt="Xypher Zhyan">
+            </article>
+        </section>
+    </main>
+
+    <footer id="pied" class="container">
+        <div class="colonne">
+            <address>
+                <span class="majuscule">Garden</span> <br>
+                Za des petits Bois, 56000 Vannes cedex 7 
+            </address>
+            <div class="icone">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+        </div>
+        <div class="colonne">
+            <a href="#tete"><img src="images-garden/flechehaut.png" alt="Fleche pour remonter la page"></a>
+            <p class="copyright">
+                Copyright Greta 2025 &copy;<a href="#"> Mentions légales</a>
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- Script sur body après footer, pour le slider -->
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    $("#tete #menuprincipal #burger i").click(function(){
+        $("#tete #menuprincipal ul").slideToggle(500);
+    });
+    </script>
+    <script  type="text/javascript" src="scripts/categories.js"></script>
+    </script>
+    <!-- fin script slider -->
+
+
 </body>
 </html>
