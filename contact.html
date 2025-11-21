@@ -1,11 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-Garden</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- ================== Database leaflet ============== -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+  </head>
+  <body>
+    <header id="tete" class="container">
+      <div id="logo">
+        <a href="#">G</a>
+      </div>
+      <nav id="menuprincipal">
+        <div id="burger"><i class="fa-solid fa-bars"></i></div>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="#">A&nbsp;propos</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="contact.html" class="on">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenu" class="container">
+      <h1 class="titrePage">Nous contacter</h1>
+
+      <div id="contact">
+        <form action="envoyerMessage.php" method="post">
+          <p>
+            Civilitée <br />
+            <div class="civilite">
+            <input type="radio" name="civilite" id="M" />
+            <label for="M">M.</label>
+            <input type="radio" name="civilite" id="Mme" />
+            <label for="Mme">Mme</label>
+            <input type="radio" name="civilite" id="Autre" />
+            <label for="Autre">Autre</label>
+            </div>
+          </p>
+          <div class="deuxColonnes">
+            <p>
+              <label for="nom">Nom</label> <br />
+              <input type="text" name="nom" id="nom" placeholder="Nom.."/>
+            </p>
+            <p>
+              <label for="prenom">Prénom</label> <br />
+              <input type="text" name="prenom" id="prenom" placeholder="Prénom.."/>
+            </p>
+          </div>
+          <div class="deuxColonnes">
+            <p>
+              <label for="email">Email</label> <br />
+              <input type="email" name="email" id="email" placeholder="Email.." />
+            </p>
+
+            <p>
+              <label for="pays">Pays</label> <br />
+              <select name="pays" id="pays">
+                <option>Selectionnez votre pays.</option>
+                <option value="france">France</option>
+                <option value="allemagne">Allemagne</option>
+                <option value="espagne">Espagne</option>
+                <option value="canada">Canada</option>
+              </select>
+            </p>
+          </div>
+          <p>
+            Vos préférences <br />
+            <div class="preference">
+            <input type="checkbox" name="choix" id="jardin" value="jardin"/>
+            <label for="jardin">Jardin</label>
+            <input type="checkbox" name="choix" id="amenagement" value="amenagement"/>
+            <label for="amenagement">Aménagement</label>
+            <input type="checkbox" name="choix" id="irrigation" value="irrigation"/>
+            <label for="irrigation">Irrigation</label>
+            </div>
+        </p>
+
+          <p>
+            <label for="message">Message ici</label> <br />
+            <textarea name="message" id="message" placeholder="Commentaire.."></textarea>
+          </p>
+
+          <p class="submit">
+            <input type="submit" value="Envoyer" />
+            <input type="reset" value="Reset" />
+          </p>
+        </form>
+      </div>
+
+      <section id="cadre">
+        <div class="iframe">
+            <h3>Carte</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2681.783515320343!2d-3.3776351632300425!3d47.766253292991955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48105f1c58e1fe15%3A0x823cad5a4f85be71!2sRue%20du%20Bois%20du%20Ch%C3%A2teau%2C%2056100%20Lorient!5e0!3m2!1sfr!2sfr!4v1763719576134!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="iframe">
+            <h3>Vidéo</h3>
+            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"><iframe src="https://geo.dailymotion.com/player.html?video=x2vw9dh" allowfullscreentitle="Dailymotion Video Player"allow="web-share"></iframe></div>
+        </div>
+      </section>
+
+      <section id="cadre2">
+    <!--      <div id="map">
+            <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-3.312034606933594%2C47.581620824334166%2C-2.7386856079101567%2C47.79240010086814&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?#map=12/47.6871/-3.0254">Afficher une carte plus grande</a></small>
+         </div> -->
+         <div id="map">
+            
+         </div>
+
+      </section>
+
+
+    </main>
+
+    <footer id="pied" class="container">
+      <div class="colonne">
+        <address>
+          <span class="majuscule">Garden</span> <br />
+          Za des petits Bois, 56000 Vannes cedex 7
+        </address>
+        <div class="icone">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <div class="colonne">
+        <a href="#tete"
+          ><img
+            src="images-garden/flechehaut.png"
+            alt="Fleche pour remonter la page"
+        /></a>
+        <p class="copyright">
+          Copyright Greta 2025 &copy;<a href="#"> Mentions légales</a>
+        </p>
+      </div>
+    </footer>
+
+
+      <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin="">
+    </script>
+    <script>
+    var map = L.map('map').setView([47.646750, -2.772782], 12);
     
-</body>
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    
+    </script>
+
+
+  </body>
 </html>
